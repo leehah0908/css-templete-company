@@ -367,7 +367,7 @@ section.me ul.list li h3 {
     position: relative;
 }
 
-section.me ul.list li h3 span{
+section.me ul.list li h3 span {
     position: absolute;
     left: -30px;
     color: #ff8342;
@@ -383,7 +383,7 @@ section.me ul.list > li .more {
     font-weight: bold;
 }
 
-section.me ul.list > li .more span{
+section.me ul.list > li .more span {
     color: #ff8342;
     font-size: 14px;
     margin-left: 3px;
@@ -405,7 +405,7 @@ section.me ul.list ul.in li p {
 }
 
 section.me ul.list ul.in li p::before {
-    content: '';
+    content: "";
     width: 4px;
     height: 4px;
     border-radius: 50%;
@@ -428,10 +428,95 @@ section.me ul.list ul.in li p::before {
     cursor: pointer;
 }
 
+/*===================================== section.me style =====================================*/
+section.sns {
+    margin-bottom: 60px;
+}
 
+section.sns ul {
+    margin: 50px auto;
+}
 
+section.sns ul li {
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+}
 
+section.sns ul li:last-child {
+    margin-right: 0;
+}
 
+section.sns ul li .img-box {
+    max-height: 250px;
+    overflow: hidden;
+    position: relative;
+}
 
+section.sns ul li .img-box img {
+    width: 100%;
+}
 
+section.sns ul li .img-box::before {
+    content: '';
+    width: 0;
+    height: 100%;
+    background: rgba(255, 131, 66, 0.75);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+section.sns ul li a:hover .img-box::before {
+    width: 100%;
+}
+
+section.sns ul li .img-box::after {
+    content: 'blog';
+    font-size: 15px;
+    font-family: "EXO 2", sans-serif;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    color: #fff;
+    padding: 5px 30px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+section.sns ul li .img-box::after {
+    opacity: 1;
+}
+
+section.sns ul li .bottom {
+    padding: 20px 0 20px 30px;
+    box-sizing: border-box;
+}
+
+section.sns ul li .bottom p {
+    font-size: 18px;
+}
+
+section.sns ul li .bottom p.color {
+    font-size: 15px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+section.sns ul li .bottom p.time {
+    color: #999;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+section.sns ul li .bottom p.time span {
+    margin-left: 5px;
+    font-size: 0.9em;
+}
 
