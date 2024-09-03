@@ -1,6 +1,6 @@
 /*  구글 웹폰트 로딩  */
-@import url('https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css');
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
 
 /* reset */
 a {
@@ -8,7 +8,8 @@ a {
     text-decoration: none;
 }
 
-button, input {
+button,
+input {
     outline: none;
     border: none;
     color: inherit;
@@ -16,18 +17,18 @@ button, input {
 
 /* common */
 .clearfix::after {
-    content: '';
+    content: "";
     display: block;
     clear: both;
 }
 
 body {
     font-size: 14px;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
 }
 
 .en {
-   font-family: 'Exo 2', sans-serif; 
+    font-family: "Exo 2", sans-serif;
 }
 
 /* header style */
@@ -48,17 +49,75 @@ header .inner-header {
 }
 
 header .inner-header .logo {
-    background-color: dodgerblue;
     float: left;
     width: 200px;
 }
 
-header .inner-header .gnb {
-    background-color: orange;
+header .inner-header .logo img {
+    width: 100%;
+    vertical-align: middle;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    opacity: 0.9;
+}
+
+/* 모든 nav에 대한 li 가로 배치 */
+header .inner-header nav li {
     float: left;
 }
 
+header .inner-header nav li a {
+    font-size: 16px;
+    color: #fff;
+}
+
+/* gnb */
+header .inner-header .gnb {
+    float: left;
+    margin-left: 80px;
+}
+
+header .inner-header .gnb li {
+    margin-right: 80px;
+}
+
+header .inner-header .gnb li a {
+    display: block;
+}
+
+header .inner-header .gnb li a:hover {
+    color: #ff8342;
+}
+
+/* tnb */
 header .inner-header .tnb {
-    background-color: salmon;
     float: right;
+}
+
+header .inner-header .tnb li {
+    margin-right: 25px;
+}
+
+/* 제품 공정, 내 삶 */
+header .inner-header .tnb li:nth-child(1) i,
+header .inner-header .tnb li:nth-child(2) i {
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+/* 제품 검색 */
+header .inner-header .tnb li:nth-child(3) i {
+    margin-left: 8px;
+    font-size: 20px;
+}
+
+header .inner-header .tnb li:nth-child(3) a {
+    border: 1px solid #fff;
+    border-radius: 30px;
+    padding: 5px 10px;
+}
+
+header .inner-header .tnb li:nth-child(3) a:hover {
+    color: #ff8342;
+    background-color: #fff;
 }
