@@ -291,3 +291,52 @@ section.about .sub-container li a .text p.more::before {
 section.innovation {
     margin-bottom: 150px;
 }
+
+
+section.innovation .img-box {
+    margin-top: 50px;
+    height: 540px;
+    background: url(./img/product_1.jpg) no-repeat center / cover;
+
+    position: relative;
+}
+
+section.innovation .img-box .inner {
+    background: #3a3c4e;
+    width: 80%;
+    color: #fff;
+
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+section.innovation .img-box .inner h3 {
+    background-color: #fff;
+    color: #222;
+    font-size: 18px;
+    padding: 25px 45px;
+}
+
+section.innovation .img-box .inner .bottom {
+    padding: 35px 85px;
+}
+
+section.innovation .img-box .inner .bottom p {
+    float: left;
+    width: 70%;
+    line-height: 1.6;
+}
+
+section.innovation .img-box .inner .bottom a {
+    /* display: block; -> float을 사용할 때 굳이 block으로 직접 바꿀 필요 없음 */
+    float: right;
+    padding: 7px 30px;
+    border-radius: 50px;
+    background-color: #ff8342;
+}
+
+section.innovation .img-box .inner .bottom a:hover {
+    background-color: #f86010;
+}
