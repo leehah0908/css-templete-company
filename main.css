@@ -48,14 +48,17 @@ header .inner-header {
 }
 
 header .inner-header .logo {
+    background-color: dodgerblue;
     float: left;
     width: 200px;
 }
 
 header .inner-header .gnb {
+    background-color: orange;
     float: left;
 }
 
 header .inner-header .tnb {
+    background-color: salmon;
     float: right;
 }
